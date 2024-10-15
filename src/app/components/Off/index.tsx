@@ -3,7 +3,7 @@ import styles from './off.module.css';
 
 
 
-export default function Shows() {
+export default function Off() {
   return (
     <section className={styles.container}>
       <span>
