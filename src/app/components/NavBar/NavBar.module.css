@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: space-around;
-    background-color: #0A2227;
+    background: linear-gradient(90deg, #0A2227 0%, #090F0F 100%);
     align-items: center;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .list {
-    display: flex;
+    display: none;
     list-style: none;
     gap: 10px;
 }
