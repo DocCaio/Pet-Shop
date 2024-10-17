@@ -1,6 +1,12 @@
 .container {
     display: flex;
     justify-content: space-around;
+    background-color: #0A2227;
+    align-items: center;
+}
+
+.sloga {
+  color: #fff;
 }
 
 .list {
@@ -10,5 +16,14 @@
 }
 
 .link {
+  color: #fff;
   text-decoration: none;  
+}
+
+  #heart {
+  background-color: #fff;
+}
+
+ #cart {
+  background-color: #fff;
 }
