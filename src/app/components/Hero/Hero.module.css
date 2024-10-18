@@ -3,7 +3,7 @@
 
 .container {
     background: linear-gradient(90deg, #0A2227 0%, #090F0F 100%);
-    color: #fff;
+    color: #fff;  
 }
 
 
@@ -54,4 +54,9 @@
 
 .containerImg {
     width: 100%;
+}
+
+.teste {
+    text-align: justify;
+    max-width:350px ;
 }
