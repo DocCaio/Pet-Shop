@@ -1,6 +1,7 @@
 import styles from './Performace.module.css'
 import Image from 'next/image'
 import Shoe from './assets/performace.png'
+import Link from 'next/link'
 
 
 
@@ -30,9 +31,10 @@ export default function Performace() {
                         Durability and Quality -
                         Crafted from high-quality materials, our shoes are
                         designed to last, supporting your athletic pursuits over the long haul.
-                    </span>
+                    </span>                    
+                    
                 </div>
-
+                <Link className={styles.link} href={"#"}>Learn more</Link>
             </div>
         </section>
     )
