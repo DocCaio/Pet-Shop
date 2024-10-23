@@ -30,10 +30,13 @@ const products = {
 };
 
 const ProductItem = ({ img, description }: ProductItemProps) => (
-    <div>
+    <div className={styles.teste}>
         <Image className={styles.performanceImg} alt={description} src={img} />
+        <div className={styles.des}>
         <span>{description}</span>
         <Link className={styles.link} href={"#"}>See product</Link>
+        </div>
+        
     </div>
 );
 

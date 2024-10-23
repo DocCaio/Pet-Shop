@@ -8,3 +8,11 @@
     color: #3E9D26;
 }
 
+.teste {
+    display: flex;
+}
+
+.des {
+    display: flex;
+    flex-direction: column;
+}
