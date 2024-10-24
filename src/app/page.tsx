@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import Performace from './components/Performace'
 import styles from "./page.module.css";
+import Slides from "./components/Slides";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
      <NavBar/>
      <Hero/>
      <Performace/>
+     <Slides/>
     </div>
   );
 }
