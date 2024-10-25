@@ -20,7 +20,7 @@ export default function Slides() {
                 </div>
             </div>
             <div className={styles.des}>
-                <Image alt='Golf' src={basket} />
+                <Image  alt='Golf' src={basket} />
                 <h3 className={styles.title}>Keni Golf</h3>
                 <span className={styles.logo}>Everything you need for any course.</span>
                 <Link className={styles.containerLink} href={'#'}>Shop</Link>
