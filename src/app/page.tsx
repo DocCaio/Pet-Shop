@@ -1,10 +1,11 @@
 import Off from './components/Off';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
-import Performace from './components/Performace'
+import Performace from './components/Performace';
 import styles from "./page.module.css";
 import Slides from "./components/Slides";
 import Slides2 from "./components/Slides2";
+import Banner from './components/Banner';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
      <Performace/>
      <Slides/>
      <Slides2/>
+     <Banner/>
     </div>
   );
 }
