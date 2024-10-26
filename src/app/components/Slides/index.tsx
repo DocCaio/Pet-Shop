@@ -1,5 +1,5 @@
 import styles from './Slides.module.css';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import basket from './assets/basket.png';
 import walk from './assets/walk.png';
 import jog from './assets/jog.png';
@@ -7,39 +7,36 @@ import Right from './assets/arrow-circle-right.svg';
 import Left from './assets/arrow-circle-left.svg';
 import Link from 'next/link';
 
+interface Sport {
+    image: StaticImageData;
+    title: string;
+    description: string;
+}
 
+const sports: Sport[] = [
+    { image: basket, title: 'Keni Golf', description: 'Everything you need for any course.' },
+    { image: walk, title: 'Keni Basketball', description: 'Styles made for your games.' },
+    { image: jog, title: 'Keni Trail Running', description: 'Everything you need for adventure.' },
+];
 
 export default function Slides() {
     return (
-        <section className={styles.container}>A
+        <section className={styles.container}>
             <div>
                 <h2 className={styles.deadline}>Shop by Sport</h2>
                 <div className={styles.arrow}>
-                    <Image alt='arrow' src={Left} />
-                    <Image alt='arrow' src={Right} />
+                    <Image alt='Left Arrow' src={Left} />
+                    <Image alt='Right Arrow' src={Right} />
                 </div>
             </div>
-            <div className={styles.des}>
-                <Image  alt='Golf' src={basket} />
-                <h3 className={styles.title}>Keni Golf</h3>
-                <span className={styles.logo}>Everything you need for any course.</span>
-                <Link className={styles.containerLink} href={'#'}>Shop</Link>
-            </div>
-
-            <div className={styles.des}>
-                <Image className={styles.logo} alt='Basketball' src={walk} />
-                <h3 className={styles.title}>Keni basketball</h3>
-                <span className={styles.logo}>Styles made for your games.</span>
-                <Link className={styles.containerLink} href={'#'}>Shop</Link>
-            </div>
-
-            <div className={styles.des}>
-                <Image alt='Runnin' src={jog} />
-                <h3 className={styles.title}>Keni Trail Running</h3>
-                <span className={styles.logo}>Everything you need for adventure.</span>
-                <Link className={styles.containerLink} href={'#'}>Shop</Link>
-            </div>
-
+            {sports.map(({ image, title, description }, index) => (
+                <div key={index} className={styles.des}>
+                    <Image alt={title} src={image} />
+                    <h3 className={styles.title}>{title}</h3>
+                    <span className={styles.logo}>{description}</span>
+                    <Link className={styles.containerLink} href='#'>Shop</Link>
+                </div>
+            ))}
         </section>
     );
 }
