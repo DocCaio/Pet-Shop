@@ -12,16 +12,16 @@ export default function List() {
         <h4>Featured</h4>
             <ul>
                 <li>
-                    <Link href={'#'}>Velocity</Link>
+                    <Link className={styles.containerLink} href={'#'}>Velocity</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Unbound</Link>
+                    <Link className={styles.containerLink} href={'#'}>Unbound</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Futurist</Link>
+                    <Link className={styles.containerLink} href={'#'}>Futurist</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Grace</Link>
+                    <Link className={styles.containerLink} href={'#'}>Grace</Link>
                 </li>
             </ul>
 
@@ -31,16 +31,16 @@ export default function List() {
         <ul>
         <h4>Shoes</h4>
                 <li>
-                    <Link href={'#'}>All shoes</Link>
+                    <Link className={styles.containerLink} href={'#'}>All shoes</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Velocity Shoes</Link>
+                    <Link className={styles.containerLink} href={'#'}>Velocity Shoes</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Running Shoes</Link>
+                    <Link className={styles.containerLink} href={'#'}>Running Shoes</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Basketball Shoes</Link>
+                    <Link className={styles.containerLink} href={'#'}>Basketball Shoes</Link>
                 </li>
             </ul>
             
@@ -51,16 +51,16 @@ export default function List() {
         <ul>
         <h4>Clothing</h4>
                 <li>
-                    <Link href={'#'}>All Clothing</Link>
+                    <Link className={styles.containerLink} href={'#'}>All Clothing</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Tops & T-Shirts</Link>
+                    <Link className={styles.containerLink} href={'#'}>Tops & T-Shirts</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Shorts</Link>
+                    <Link className={styles.containerLink} href={'#'}>Shorts</Link>
                 </li>
                 <li>
-                    <Link href={'#'}>Hoodies & Pullovers</Link>
+                    <Link className={styles.containerLink} href={'#'}>Hoodies & Pullovers</Link>
                 </li>
             </ul>
             
@@ -71,16 +71,16 @@ export default function List() {
         <ul>
             <h4>Kids’</h4>
                 <li>
-                    <Link href={'#'}></Link>
+                    <Link className={styles.containerLink} href={'#'}>Infant & Toddler Shoes</Link>
                 </li>
                 <li>
-                    <Link href={'#'}></Link>
+                    <Link className={styles.containerLink} href={'#'}>Kids’ Shoes</Link>
                 </li>
                 <li>
-                    <Link href={'#'}></Link>
+                    <Link className={styles.containerLink} href={'#'}>Kids’ Basketball Shoes</Link>
                 </li>
                 <li>
-                    <Link href={'#'}></Link>
+                    <Link className={styles.containerLink} href={'#'}>Kids’ Running Shoes</Link>
                 </li>
             </ul>
             
