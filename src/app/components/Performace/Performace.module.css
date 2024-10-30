@@ -1,4 +1,8 @@
-.performace {    
+.performace { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;    
     color: #fff;
     background: linear-gradient(90deg, #0A2227 0%, #090F0F 100%);
 }
