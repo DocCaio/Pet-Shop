@@ -59,3 +59,10 @@
     line-height: normal;
     text-decoration: none;
 }
+
+@media (min-width: 600px) {
+    .container {
+     display: flex;   
+     justify-content: center;     
+    }
+  }

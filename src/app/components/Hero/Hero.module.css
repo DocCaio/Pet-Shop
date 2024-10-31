@@ -2,6 +2,7 @@
 
 
 .container {
+    padding: 1rem;
     background: linear-gradient(90deg, #0A2227 0%, #090F0F 100%);
     color: #fff;  
 }
@@ -60,3 +61,19 @@
     text-align: justify;
     max-width:350px ;
 }
+
+
+@media (min-width: 600px) {
+    .container{
+     display: flex;   
+     justify-content: space-around;
+      
+    }
+    .containerImg {
+        max-width: 550px;
+        width: 100%;
+     
+  
+    }
+
+  }

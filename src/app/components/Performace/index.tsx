@@ -30,7 +30,7 @@ const products = {
 };
 
 const ProductItem = ({ img, description }: ProductItemProps) => (
-    <div className={styles.teste}>
+    <div className={styles.product}>
         <Image className={styles.performanceImg} alt={description} src={img} />
         <div className={styles.des}>
         <span>{description}</span>
@@ -55,7 +55,7 @@ export default function Performace() {
             </div>
 
             {Object.entries(products).map(([gender, items]) => (
-                <div key={gender}>
+                <div className={styles.teste} key={gender}>
                     <h3>{gender.charAt(0).toUpperCase() + gender.slice(1)}</h3>
                     {items.map((item, index) => (
                         <ProductItem key={index} {...item} />
