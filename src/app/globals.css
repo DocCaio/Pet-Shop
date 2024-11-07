@@ -7,6 +7,8 @@
 
 @import url('./components/NavBar/NavBar.module.css');
 @import url('./components/Hero/Hero.module.css');
+@import url('./components/Services/Services.module.css');
+@import url('./components/Plains/Plains.module.css');
 
 
 :root {
