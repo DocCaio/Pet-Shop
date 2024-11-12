@@ -9,6 +9,10 @@
 @import url('./components/Hero/Hero.module.css');
 @import url('./components/Services/Services.module.css');
 @import url('./components/Plains/Plains.module.css');
+@import url('./components/Parceiros/Parceiros.module.css');
+@import url('./components/Newsletter/Newsletter.module.css');
+@import url('./components/Offs/Offs.module.css');
+@import url('./components/Base/Base.module.css');
 
 
 :root {
