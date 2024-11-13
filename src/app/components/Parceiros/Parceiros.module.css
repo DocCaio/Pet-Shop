@@ -9,12 +9,12 @@
     background-color: var(--cor-neutra-light);
 }
 
-.parceiros-titulo {
+.parceirosTitulo {
     color: var(--cor-primaria-light);
     margin-bottom: 1.25rem;
 }
 
-.lista-parceiros {
+.listaParceiros {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,12 +25,12 @@
     }
 }
 
-.lista-parceiros>div {
+.listaParceiros>div {
     flex: 1 0 100px;
     width: 100%;
 }
 
-.lista-parceiros>div>img {
+.listaParceiros>div>img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -38,12 +38,12 @@
     transition: transform 0.3s ease;
 }
 
-.lista-parceiros>div:nth-child(odd):hover img {
+.listaParceiros>div:nth-child(odd):hover img {
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--cor-primaria-box-shadow);
 }
 
-.lista-parceiros>div:nth-child(even):hover img {
+.listaParceiros>div:nth-child(even):hover img {
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--cor-secundaria-box-shadow);
 }

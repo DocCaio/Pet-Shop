@@ -3,9 +3,9 @@ import styles from './Parceiros.module.css';
 export default function Parceiros() {
     return (
         <>
-        <section className="parceiros">
-      <h2 className="parceiros-titulo">Marcas parceiras</h2>
-      <div className="lista-parceiros container">
+        <section className={styles.parceiros}>
+      <h2 className={styles.parceirosTitulo}>Marcas parceiras</h2>
+      <div className={styles.listaParceiros} id={styles.containe}>
         <div>
           <img src="./assets/imagens/petisco.png" alt="Petisco" />
         </div>
