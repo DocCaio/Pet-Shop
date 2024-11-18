@@ -1,4 +1,6 @@
-import styles from './Hero.module.css'
+import styles from './Hero.module.css';
+import Image from 'next/image';
+import Banner from '../../assets/imagens/banner.png';
 
 export default function Hero() {
 
@@ -10,8 +12,8 @@ export default function Hero() {
           Seu melhor amigo,
           <span>nosso maior cuidado!</span>
         </h1>
-        <img src="./assets/imagens/banner.png"
-          alt="Imagem de dois pets, um gato cinza listrado e um cão husky nas cores branco e caramelo" />
+        <Image src={Banner} 
+        alt="Imagem de dois pets, um gato cinza listrado e um cão husky nas cores branco e caramelo"/>        
       </div>
     </section>
 
