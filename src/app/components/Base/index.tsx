@@ -1,4 +1,10 @@
 import styles from './Base.module.css';
+import Image from 'next/image';
+import whatsapp from '../../assets/icones/whatsapp.png';
+import instragam from '../../assets/icones/instragam.png';
+import tiktok from '../../assets/icones/tiktok.png';
+
+
 
 export default function Footer() {
 
@@ -10,9 +16,9 @@ export default function Footer() {
       <div className={styles.iconesRodape}>
         <p className={styles.bodyRegular}>Acesse nossas redes:</p>
         <div>
-          <img className={styles.iconeRodape} src="./assets/icones/whatsapp.png" alt="Whatsapp" />
-          <img className={styles.iconeRodape} src="./assets/icones/instragam.png" alt="Instagram" />
-          <img className={styles.iconeRodape} src="./assets/icones/tiktok.png" alt="Tiktok" />
+          <Image  className={styles.iconeRodape}  src={whatsapp}   alt="Whatsapp"/>
+          <Image  className={styles.iconeRodape} src={instragam}  alt="Instagram"/>
+          <Image  className={styles.iconeRodape} src={tiktok} alt="Tiktok"/>       
         </div>
       </div>
       <span>Desenvolvido por mim.</span>
