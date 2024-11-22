@@ -20,7 +20,7 @@ export default function Parceiros() {
     <>
       <section className={styles.parceiros}>
         <h2 className={styles.parceirosTitulo}>Marcas parceiras</h2>
-        <div className={styles.listaParceiros} id={styles.containe}>
+        <div className={styles.listaParceiros} id={styles.container}>
           <div>
             <Image src={petisco} alt="Petisco" />
           </div>

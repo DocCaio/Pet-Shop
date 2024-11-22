@@ -9,6 +9,10 @@
     background-color: var(--cor-neutra-light);
 }
 
+#container {
+    width: 1200px;
+}
+
 .parceirosTitulo {
     color: var(--cor-primaria-light);
     margin-bottom: 1.25rem;

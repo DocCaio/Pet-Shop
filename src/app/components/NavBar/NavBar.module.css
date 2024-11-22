@@ -6,6 +6,10 @@
     padding-bottom: var(--padding-xl);
 }
 
+#container {
+    width: 1200px;
+}
+
 .alinhamentoCabecalho {
     display: flex;
     justify-content: space-between;

@@ -1,14 +1,14 @@
 import styles from './NavBar.module.css';
 import Image from 'next/image';
 import Logo from '../../assets/logo.png';
+import Login from '../../assets/icones/login.png';
 
 export default function NavBar() {
     return (
     <>      
     <header className={styles.cabecalho}>
     <div className={styles.alinhamentoCabecalho} id={styles.container}>
-      <Image src={Logo}  alt="Logotipo do Petpark"/>
-      <img src="./assets/logo.png"  />
+      <Image src={Logo}  alt="Logotipo do Petpark"/>     
       <label className={styles.labelBusca}>
         <input className={styles.inputBusca} type="text" name="campo-busca" placeholder="O que você procura?" />
         <div className={styles.iconeBusca}>
@@ -16,7 +16,7 @@ export default function NavBar() {
         </div>
       </label>
       <button className={styles.botaoLogin}>
-        <img className={styles.iconeLogin} src="./assets/icones/login.png" alt="ícone de login" />
+      <Image src={Login} alt="ícone de login"/> 
         Login/Cadastro
       </button>
     </div>

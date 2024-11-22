@@ -6,6 +6,10 @@
     background-color: var(--cor-secundaria-light);
 }
 
+#container {
+    width: 1200px;
+}
+
 .banner {
     display: flex;
     justify-content: space-between;
