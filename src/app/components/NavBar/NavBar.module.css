@@ -39,7 +39,7 @@
     &::after {
         content: "";
         position: relative;
-        /*background-image: url("../assets/icones/busca.png");*/
+        background-image: url("../../assets/icones/busca.png");
         background-repeat: no-repeat;
         cursor: pointer;
         width: 20px;
@@ -59,11 +59,12 @@
     align-content: center;
 }
 
-.menu-lista {
+.menuLista {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1rem 0;
+    list-style: none;
 }
 
 .menuLink {
@@ -84,7 +85,7 @@
     }
 }
 
-.menu-link:hover::after,
-.menu-link:focus::after {
+.menuLink:hover::after,
+.menuLink:focus::after {
     width: 100%;
 }
