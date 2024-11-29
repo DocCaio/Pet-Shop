@@ -32,14 +32,12 @@ export default function () {
             </li>
             <li className={styles.carrosselItem}>
               <Image className={styles.carrosselImagem} src={pipicat} alt="Areia Higiênica Pipicat" />
-              <img />
               <h3 className={styles.carrosselNome}>Areia Higiênica Pipicat</h3>
               <p className={styles.carrosselDescricao}>Classic para Gatos 4 Kg</p>
               <span className={styles.carrosselPreco}>R$ 45,00</span>
             </li>
             <li className={styles.carrosselItem}>
               <Image className={styles.carrosselImagem} src={arranhador} alt="Arranhador São Benedito Pet" />
-              <img />
               <h3 className={styles.carrosselNome}>Arranhador São Benedito Pet</h3>
               <p className={styles.carrosselDescricao}>Redondo com pluma e mola rosa</p>
               <span className={styles.carrosselPreco}>R$ 59,90</span>
