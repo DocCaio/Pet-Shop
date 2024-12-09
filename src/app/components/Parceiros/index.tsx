@@ -13,59 +13,40 @@ import corgi from '../../assets/imagens/corgi.png';
 import mascot from '../../assets/imagens/mascot.png';
 import amigo from '../../assets/imagens/amigo-fiel.png';
 
+// Adjusting the type to accept StaticImageData instead of just string
+import { StaticImageData } from 'next/image';
 
+type PartnerImage = {
+  src: StaticImageData; // Use StaticImageData instead of string
+  alt: string;
+};
+
+const partnerImages: PartnerImage[] = [
+  { src: petisco, alt: 'Petisco' },
+  { src: pelos, alt: 'Pelos e patas' },
+  { src: miaw, alt: 'Miaw' },
+  { src: woofy, alt: 'Woofy' },
+  { src: animalia, alt: 'Animalia' },
+  { src: petstars, alt: 'Petstars' },
+  { src: pet, alt: 'Pet Mania' },
+  { src: rooster, alt: 'Rooster' },
+  { src: bicudos, alt: 'Bicudos' },
+  { src: corgi, alt: 'Corgi' },
+  { src: mascot, alt: 'Mascot' },
+  { src: amigo, alt: 'Amigo Fiel' },
+];
 
 export default function Parceiros() {
   return (
-    <>
-      <section className={styles.parceiros}>
-        <h2 className={styles.parceirosTitulo}>Marcas parceiras</h2>
-        <div className={styles.listaParceiros} id={styles.container}>
-          <div>
-            <Image src={petisco} alt="Petisco" />
+    <section className={styles.parceiros}>
+      <h2 className={styles.parceirosTitulo}>Marcas parceiras</h2>
+      <div className={styles.listaParceiros} id={styles.container}>
+        {partnerImages.map((partner, index) => (
+          <div key={index}>
+            <Image src={partner.src} alt={partner.alt} />
           </div>
-          <div>
-            <Image src={pelos} alt="Pelos e patas" />
-          </div>
-          <div>
-            <Image src={miaw} alt="Miaw" />
-          </div>
-          <div>
-            <Image src={woofy} alt="Woofy" />
-          </div>
-          <div>
-            <Image src={animalia} alt="Animalia" />
-          </div>
-          <div>
-            <Image src={petstars} alt="Petstars" />
-
-          </div>
-          <div>
-            <Image src={pet} alt="Pet Mania" />
-
-          </div>
-          <div>
-            <Image src={rooster} alt="Rooster" />
-
-          </div>
-          <div>
-            <Image src={bicudos} alt="Bicudos" />
-          </div>
-          <div>
-            <Image src={corgi} alt="Corgi" />
-
-          </div>
-          <div>
-            <Image src={mascot} alt="Mascot" />
-
-          </div>
-          <div>
-            <Image src={amigo} alt="Amigo Fiel" />
-
-          </div>
-        </div>
-      </section>
-    </>
-
-  )
+        ))}
+      </div>
+    </section>
+  );
 }
