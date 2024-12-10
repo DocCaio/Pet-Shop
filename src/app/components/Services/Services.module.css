@@ -45,25 +45,25 @@
     transition: transform 0.3s ease, left 0.3s ease;
 }
 
-/*.banhoETosa>.link::before {
-    background-image: url("../assets/icones/banho-e-tosa.png");
+.banhoETosa>.link::before {
+    background-image: url("../../assets/icones/banho-e-tosa.png");
 }
 
 .hospedagem>.link::before {
-    background-image: url("../assets/icones/hospedagem.png");
+    background-image: url("../../assets/icones/hospedagem.png");
 }
 
 .veterinario>.link::before {
-    background-image: url("../assets/icones/veterinario.png");
+    background-image: url("../../assets/icones/veterinario.png");
 }
 
 .adestramento>.link::before {
-    background-image: url("../assets/icones/adestramento.png");
+    background-image: url("../../assets/icones/adestramento.png");
 }
 
 .petsiter>.link::before {
-    background-image: url("../assets/icones/petsiter.png");
-}*/
+    background-image: url("../../assets/icones/petsiter.png");
+}
 
 .servicosLista > li > .link:hover {
     transform: scale(1.05);
