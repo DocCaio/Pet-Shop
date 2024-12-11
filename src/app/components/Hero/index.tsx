@@ -12,7 +12,7 @@ export default function Hero() {
           Seu melhor amigo,
           <span>nosso maior cuidado!</span>
         </h1>
-        <Image src={Banner} 
+        <Image className={styles.img} src={Banner} 
         alt="Imagem de dois pets, um gato cinza listrado e um cão husky nas cores branco e caramelo"/>        
       </div>
     </section>

@@ -19,6 +19,11 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;        
+    }
 }
 
 .servicosLista>li>.link {
@@ -29,7 +34,15 @@
     padding: var(--padding-m) var(--padding-l);
     font-family: var(--font-sigmar);
     font-size: var(--font-size-m);
-    color: var(--cor-primaria-light)
+    color: var(--cor-primaria-light);
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;        
+    }
+
+
+
 }
 
 .link::before {

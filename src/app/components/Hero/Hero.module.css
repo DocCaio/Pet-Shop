@@ -4,7 +4,8 @@
     align-items: center;
     padding: var(--padding-5xl) 0;
     background-color: var(--cor-secundaria-light);
-}
+    
+  }
 
 #container {
     width: 1200px;
@@ -14,12 +15,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .destaqueTitulo {
     color: var(--cor-primaria-dark);
+    
+    @media (max-width: 768px) {
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+    }
 }
 
 .destaqueTitulo>span {
     color: var(--cor-terciaria-dark);
+}
+
+.img {
+    @media (max-width: 768px) {        
+        width: 100%;
+        height: auto;
+    }
+
 }
