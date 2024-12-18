@@ -7,6 +7,11 @@
     width: 100%;
     padding: var(--padding-4xl) 0;
     background-color: var(--cor-secundaria-light);
+
+    @media (max-width: 768px) {
+        display: flex;       
+        text-align: center;
+    }
 }
 
 .newsletter h2 {
@@ -56,6 +61,12 @@
     align-items: center;
     gap: var(--gap-s);
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        display: flex;       
+        flex-direction: column;
+        
+    }
 }
 
 .opcao {
