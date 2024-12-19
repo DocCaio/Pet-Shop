@@ -1,3 +1,4 @@
+/* General Header Styling */
 .cabecalho {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,8 @@
 
 #container {
     width: 1200px;
+    max-width: 100%;
+    padding: 0 1rem; /* To ensure some space on smaller screens */
 }
 
 .alinhamentoCabecalho {
@@ -15,8 +18,11 @@
     justify-content: space-between;
     align-items: center;
     padding-top: var(--padding-l);
+    width: 100%;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
+/* Search Bar Styling */
 .labelBusca {
     display: flex;
     flex-grow: 0.5;
@@ -25,11 +31,14 @@
     border: 1px solid var(--cor-neutra-dark);
     padding: var(--padding-s) var(--padding-m);
     border-radius: 2rem;
+    width: 100%; /* Make search bar responsive */
+    max-width: 400px; /* Limit the width */
 }
 
 .labelBusca input {
     border: none;
     outline: none;
+    width: 100%; /* Full width input */
 }
 
 .iconeBusca {
@@ -47,16 +56,25 @@
     }
 }
 
+/* Login Button Styling */
 .botaoLogin {
     background-color: transparent;
     border: none;
     display: flex;
     align-items: center;
     gap: var(--gap-s);
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
-.navagacao {
+.botaoLogin img {
+    max-width: 20px;
+}
+
+/* Navigation Bar Styling */
+.navegacao {
     align-content: center;
+    width: 100%;
 }
 
 .menuLista {
@@ -65,6 +83,9 @@
     justify-content: space-between;
     margin: 1rem 0;
     list-style: none;
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .menuLink {
@@ -72,20 +93,76 @@
     color: var(--cor-neutra-dark);
     position: relative;
     padding-bottom: var(--padding-xs);
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
 
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--cor-neutra-dark);
-        transition: width 0.3s ease;
-    }
+.menuLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-neutra-dark);
+    transition: width 0.3s ease;
 }
 
 .menuLink:hover::after,
 .menuLink:focus::after {
     width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens */
+@media (max-width: 768px) {
+    .alinhamentoCabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--gap-s);
+    }
+
+    .labelBusca {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 1rem;
+    }
+
+    .menuLista {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menuLink {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* For very small screens (mobile) */
+@media (max-width: 480px) {
+    #container {
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .labelBusca {
+        max-width: 250px;
+    }
+
+    .menuLink {
+        font-size: 1rem;
+        padding: 0.8rem 0;
+    }
+
+    .botaoLogin {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .cabecalho {
+        padding-bottom: var(--padding-l);
+    }
 }
