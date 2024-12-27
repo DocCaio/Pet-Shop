@@ -7,10 +7,11 @@
     width: 100%;
     padding: var(--padding-4xl) 0;
     background-color: var(--cor-secundaria-light);
+}
 
-    @media (max-width: 768px) {
-        display: flex;       
-        text-align: center;
+@media (max-width: 768px) {
+    .newsletter {
+        text-align: center;  /* Center text on small screens */
     }
 }
 
@@ -28,6 +29,8 @@
     justify-content: center;
     gap: var(--gap-m);
     align-items: center;
+    width: 100%;
+    max-width: 600px; /* Prevent the form from getting too wide */
 }
 
 .botaoEnviar {
@@ -38,6 +41,11 @@
     border-radius: 32rem;
     cursor: pointer;
     font-size: var(--font-size-xm);
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.botaoEnviar:hover {
+    background-color: var(--cor-primaria-dark); /* Darker on hover */
 }
 
 .formularioInput {
@@ -46,13 +54,16 @@
     background-color: transparent;
     border-radius: 2rem;
     flex: 1 0 200px;
+    min-width: 200px; /* Ensure inputs don't shrink too much */
+    transition: border-color 0.3s ease; /* Smooth transition for valid/invalid states */
 }
 
-.formularioInput:user-valid {
+/* Correct valid and invalid states */
+.formularioInput:valid {
     border: 2px solid var(--cor-terciaria-dark);
 }
 
-.formularioInput:user-invalid {
+.formularioInput:invalid {
     border: 2px solid var(--cor-primaria-dark);
 }
 
@@ -61,11 +72,14 @@
     align-items: center;
     gap: var(--gap-s);
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
 
-    @media (max-width: 768px) {
-        display: flex;       
+@media (max-width: 768px) {
+    .grupoOpcoes {
         flex-direction: column;
-        
+        gap: var(--gap-m);
     }
 }
 
@@ -91,8 +105,17 @@
     border: 1px solid var(--cor-neutra-dark);
     background-color: transparent;
     border-radius: 0.25rem;
+    transition: background-color 0.3s ease; /* Smooth transition for checked state */
 }
 
 .opcao input[type="checkbox"]:checked+span {
     background-color: var(--cor-primaria-light);
+}
+
+.opcao input[type="checkbox"]:focus+span {
+    outline: 2px solid var(--cor-primaria-light); /* Outline on focus for accessibility */
+}
+
+.opcao input[type="checkbox"]:hover+span {
+    background-color: var(--cor-primaria-light); /* Light hover effect */
 }
